@@ -2,21 +2,22 @@
 __pycache__/
 *.pyc
 
-# Virtual environments
+# Virtual env
 .venv/
 
 # Raw data (never commit)
 data/raw/*.csv
 
-# Processed data and outputs
+# Generated artifacts (never commit)
 data/processed/*
 outputs/*
 reports/*
 
-# Keep folders
+# Keep folder placeholders
+!data/processed/.gitkeep
 !outputs/.gitkeep
 !reports/.gitkeep
 
 # OS
-.DS_Store
 Thumbs.db
+.DS_Store
