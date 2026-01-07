@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+
+# Raw data (never commit)
+data/raw/*.csv
+
+# Processed data and outputs
+data/processed/*
+outputs/*
+reports/*
+
+# Keep folders
+!outputs/.gitkeep
+!reports/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db

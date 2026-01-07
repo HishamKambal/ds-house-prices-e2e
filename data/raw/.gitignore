@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+
+# Data
+data/raw/*.csv
+data/processed/*
+
+# Outputs & reports
+outputs/*
+reports/*
+!outputs/.gitkeep
+!reports/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
