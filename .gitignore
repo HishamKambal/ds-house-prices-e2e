@@ -1,23 +1,37 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
 
-# Virtual env
+# Environments
 .venv/
+venv/
+.env/
+conda-meta/
 
-# Raw data (never commit)
-data/raw/*.csv
+# Jupyter
+.ipynb_checkpoints/
 
-# Generated artifacts (never commit)
-data/processed/*
-outputs/*
-reports/*
-
-# Keep folder placeholders
-!data/processed/.gitkeep
-!outputs/.gitkeep
-!reports/.gitkeep
-
-# OS
-Thumbs.db
+# OS / Editor
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data (DO NOT COMMIT)
+data/raw/
+data/interim/
+data/processed/
+
+# Outputs / Models (DO NOT COMMIT)
+outputs/
+*.joblib
+*.pkl
+
+# Reports (keep metrics.json if you want)
+# If you want to commit reports/metrics.json, do NOT ignore reports/.
+# reports/

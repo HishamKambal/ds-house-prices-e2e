@@ -1,0 +1,38 @@
+{
+  "best_model": "GradientBoosting",
+  "cv_rmse_mean": 0.13405294633631998,
+  "cv_rmse_std": 0.020192847766544102,
+  "all_models": [
+    {
+      "model": "LinearRegression",
+      "rmse_mean": 0.15275403445149474,
+      "rmse_std": 0.035083083846199396
+    },
+    {
+      "model": "Ridge(alpha=10)",
+      "rmse_mean": 0.19656880473549374,
+      "rmse_std": 0.04508886382073465
+    },
+    {
+      "model": "Lasso(alpha=0.0005)",
+      "rmse_mean": 0.14157018454756382,
+      "rmse_std": 0.04396272024038013
+    },
+    {
+      "model": "RandomForest(n=400)",
+      "rmse_mean": 0.14506273549605314,
+      "rmse_std": 0.019250023876204222
+    },
+    {
+      "model": "GradientBoosting",
+      "rmse_mean": 0.13405294633631998,
+      "rmse_std": 0.020192847766544102
+    }
+  ],
+  "target_transform": "log1p(SalePrice)",
+  "cv": {
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42
+  }
+}
